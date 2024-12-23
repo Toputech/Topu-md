@@ -5,9 +5,9 @@
    "main": "index.js",
    "type": "commonjs",
    "scripts": {
-      "run": "pm2 start . --deep-monitoring --attach --name zokou-bot || node .",
-      "zokou": "pm2 start . --deep-monitoring --attach --name zokou-bot || node .",
-      "start": "pm2 start . --attach --name zokou-bot",
+      "run": "pm2 start . --deep-monitoring --attach --name zokou_bot || node .",
+      "zokou": "pm2 start . --deep-monitoring --attach --name zokou_bot || node .",
+      "start": "pm2 start . --attach --name zokou_bot",
       "stop": "pm2 stop zokou-bot",
       "heroku-postbuild": "git clone https://github.com/Luffy2ndAccount/Zokou-english-v.git temp && mv temp/.git .git && rm -rf temp && npx puppeteer@latest install  --y",
       "fis-heroku-postbuild": "git clone https://github.com/Luffy2ndAccount/Zokou-english-v.git temp1 && rsync -av temp1/* ./ && rsync -av temp1/.* ./ && rm -rf temp1 && npm i && npx puppeteer@latest install",
